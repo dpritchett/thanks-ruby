@@ -5,9 +5,16 @@ class ThanksTest < Minitest::Test
     refute_nil ::Thanks::VERSION
   end
 
-  def test_it_lists_gems
+  def test_it_lists_system_gems
     result = Thanks.system_gems
-    
-    assert result.include? 'thanks'
+
+    # this one's in the travis build and i have it locally,
+    # could be a better test
+    assert result.include? 'timesheet_nags'
+  end
+
+  def test_it_lists_bundled_gems
+    result = Thanks.bundled_gems
+    assert result.include? 'bundler'
   end
 end
