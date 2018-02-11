@@ -32,6 +32,10 @@ Sweet! You are using gems with donation pages!
  - bundler	https://rubytogether.org
 ```
 
+## How do I get my gem added to the registry?
+
+[Submit a PR](https://github.com/dpritchett/thanks-ruby/pulls) with your info!
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `rake test` to run the tests. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
