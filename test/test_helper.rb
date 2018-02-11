@@ -1,4 +1,4 @@
-$LOAD_PATH.unshift File.expand_path("../../lib", __FILE__)
-require "thanks"
+$LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
+require 'thanks'
 
-require "minitest/autorun"
+require 'minitest/autorun'

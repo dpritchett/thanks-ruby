@@ -4,6 +4,6 @@ rvm:
   - 2.3.3
 
 install:
-  gem install timesheet_nags
+  bundle
 
-script: rake
+script: make

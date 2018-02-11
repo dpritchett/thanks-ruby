@@ -1,9 +1,9 @@
-require "thanks/version"
-require "thanks/registry"
+require 'thanks/version'
+require 'thanks/registry'
 
+# Let's thank people for making the Ruby code we depend on!
 module Thanks
   def self.print_list
-
     if matches.any?
       puts "\nSweet! You are using gems with donation pages!\n\n"
       matches.sort.each { |name, url| puts " - #{name}\t#{url}" }
@@ -19,7 +19,7 @@ module Thanks
   end
 
   def self.matches
-    @_matches ||= REGISTRY.select do |name, url|
+    @_matches ||= REGISTRY.select do |name, _url|
       system_gems.include?(name) ||
         bundled_gems.include?(name)
     end
@@ -31,9 +31,9 @@ module Thanks
 
   def self.bundled_gems
     @_bundled_gems ||= `bundle list`
-      .split("\n")
-      .drop(1).map(&:split)
-      .map { |words| words.drop(1) }
-      .map(&:first)
+                       .split("\n")
+                       .drop(1).map(&:split)
+                       .map { |words| words.drop(1) }
+                       .map(&:first)
   end
 end
