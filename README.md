@@ -1,6 +1,7 @@
 # Thanks
 
 ![download counter link at rubygems](https://img.shields.io/gem/dt/thanks.svg)
+![Build Status at Travis CI](https://travis-ci.org/dpritchett/thanks-ruby.svg?branch=master)
 
 Find out how to support the authors of the gems you depend on. Inspired by @feross's [thanks package for Node](https://github.com/feross/thanks).
 
