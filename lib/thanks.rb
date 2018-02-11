@@ -5,13 +5,17 @@ module Thanks
   def self.print_list
 
     if matches.any?
-      puts "Sweet! You are using gems with donation pages!\n\n"
+      puts "\nSweet! You are using gems with donation pages!\n\n"
       matches.sort.each { |name, url| puts " - #{name}\t#{url}" }
     else
-      puts "Man! Can't find any gems on your system to support!"
+      puts "\nMan! Can't find any gems on your system to support!"
     end
 
-    puts "\nAdd more gem donation links to our list at https://github.com/dpritchett/thanks-ruby"
+    puts "\nYou can also donate to help the Ruby language itself"
+    puts "\thttps://bugs.ruby-lang.org/projects/ruby/wiki/Donation"
+
+    puts "\nAdd more gem donation links to our list at"
+    puts "\thttps://github.com/dpritchett/thanks-ruby"
   end
 
   def self.matches
