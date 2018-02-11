@@ -10,11 +10,16 @@ class ThanksTest < Minitest::Test
 
     # this one's in the travis build and i have it locally,
     # could be a better test
-    assert result.include? 'timesheet_nags'
+    assert result.include? 'rubocop'
   end
 
   def test_it_lists_bundled_gems
     result = Thanks.bundled_gems
     assert result.include? 'rubocop'
+  end
+
+  def test_it_loads_local_registry
+    result = Thanks.registry_local
+    assert result.keys.include? 'gemstash'
   end
 end

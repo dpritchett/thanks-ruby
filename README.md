@@ -9,7 +9,7 @@ Find out how to support the authors of the gems you depend on. Inspired by @fero
 
 TODO: 
 
-- Add your donation linkt to the registry
+- Add your donation link to the registry
 - Cleaner gem listing code?
 
 Help wanted! This is free of course :)
