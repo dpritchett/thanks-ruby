@@ -5,7 +5,9 @@ class ThanksTest < Minitest::Test
     refute_nil ::Thanks::VERSION
   end
 
-  def test_it_does_something_useful
-    assert false
+  def test_it_lists_gems
+    result = Thanks.system_gems
+    
+    assert result.include? 'thanks'
   end
 end
