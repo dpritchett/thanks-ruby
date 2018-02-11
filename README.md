@@ -4,6 +4,8 @@
 
 Find out how to support the authors of the gems you depend on. Inspired by @feross's "thanks" package for Node.
 
+![screencast of the gem in action](img/screencast.gif)
+
 TODO: 
 
 - Tests
@@ -14,7 +16,7 @@ TODO:
 
 Help wanted! This is free of course :)
 
-## Installation
+## Installation and Usage
 
 Install this directly:
 
