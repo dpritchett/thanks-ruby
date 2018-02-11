@@ -19,7 +19,12 @@ class ThanksTest < Minitest::Test
   end
 
   def test_it_loads_local_registry
-    result = Thanks.registry_local
+    result = Thanks::Registry.new.local
+    assert result.keys.include? 'gemstash'
+  end
+
+  def test_it_loads_remote_registry
+    result = Thanks::Registry.new.remote
     assert result.keys.include? 'gemstash'
   end
 end

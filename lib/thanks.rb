@@ -1,6 +1,5 @@
 require 'thanks/version'
 require 'thanks/registry'
-require 'yaml'
 
 # Let's thank people for making the Ruby code we depend on!
 module Thanks
@@ -20,7 +19,9 @@ module Thanks
   end
 
   def self.matches
-    @_matches ||= registry_local.select do |name, _url|
+    registry = Registry.new.fetch
+
+    @_matches ||= registry.select do |name, _url|
       system_gems.include?(name) ||
         bundled_gems.include?(name)
     end
@@ -36,9 +37,5 @@ module Thanks
                        .drop(1).map(&:split)
                        .map { |words| words.drop(1) }
                        .map(&:first)
-  end
-
-  def self.registry_local
-    @_registry ||= YAML.load_file(File.join(__dir__, 'thanks', 'registry.yml'))
   end
 end
