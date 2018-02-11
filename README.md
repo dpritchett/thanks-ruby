@@ -1,31 +1,34 @@
 # Thanks
 
+![download counter link at rubygems](https://img.shields.io/gem/dt/rails.svg)
+
 Find out how to support the authors of the gems you depend on. Inspired by @feross's "thanks" package for Node.
 
 TODO: 
 
-- Add the list
-- Build the executable
-- Get list of system gems
+- Tests
 - Get list of gems for local context
+- Get gems from gemspec
+- Get gems from Gemfile
+- Add your donation linkt to the registry
 
 Help wanted! This is free of course :)
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Install this directly:
 
-```ruby
-gem 'thanks'
-```
+`$ gem install thanks`
 
 And then execute:
 
-    $ bundle
+```sh
+$ thanks_rb
 
-Or install it yourself as:
+Sweet! You are using gems with donation pages!
 
-    $ gem install thanks
+ - bundler	https://rubytogether.org
+```
 
 ## Development
 

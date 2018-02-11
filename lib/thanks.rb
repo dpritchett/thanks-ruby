@@ -3,13 +3,13 @@ require "thanks/registry"
 
 module Thanks
   def self.print_list
-    matches = registry.select do |name, url|
-      system_gems.include(name)
+    matches = REGISTRY.select do |name, url|
+      system_gems.include?(name)
     end
 
     if matches.any?
-      puts "Sweet! You are using gems with donation pages!"
-      matches.each { |name, url| puts [name, url].join("\t")
+      puts "Sweet! You are using gems with donation pages!\n\n"
+      matches.each { |name, url| puts " - #{name}\t#{url}" }
     end
 
   end
