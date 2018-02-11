@@ -8,11 +8,8 @@ Find out how to support the authors of the gems you depend on. Inspired by @fero
 
 TODO: 
 
-- Tests
-- Get list of gems for local context
-- Get gems from gemspec
-- Get gems from Gemfile
 - Add your donation linkt to the registry
+- Cleaner gem listing code?
 
 Help wanted! This is free of course :)
 
