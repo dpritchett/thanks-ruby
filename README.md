@@ -2,7 +2,7 @@
 
 ![download counter link at rubygems](https://img.shields.io/gem/dt/rails.svg)
 
-Find out how to support the authors of the gems you depend on. Inspired by @feross's "thanks" package for Node.
+Find out how to support the authors of the gems you depend on. Inspired by @feross's [thanks package for Node](https://github.com/feross/thanks).
 
 ![screencast of the gem in action](img/screencast.gif)
 
